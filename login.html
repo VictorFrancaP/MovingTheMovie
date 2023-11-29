@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving the movie</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="../CSS/login.css">
+    <div class="Login">
+        <h2>Login</h2>
+        <div class="box-user">
+              <input type="email" id="email" required>
+              <label>Email</label>
+        </div>
+        <div class="box-user ">
+          <label>Senha</label>
+            <input type="password" id="senha" required>
+
+            <a href="senha.html" class="forget"> Esqueceu a senha?</a>
+              <button class="senha2" onclick="mostrarSenha()"> Mostrar senha</button>
+      </div>
+      <script>
+         function mostrarSenha() {
+          var tipo = document.getElementById("senha");
+          if(tipo.type =="password") {
+            tipo.type= "text"; 
+          } else{
+            tipo.type = "password";
+          }
+         }
+
+      </script>
+      
+      <div  class="Manterconectado">
+        <input type="checkbox" name=""> 
+  
+        <br> <label >Manter conectado</label>
+      </div>
+
+      
+
+      <div class="card-group btn"> 
+        <button class="btnAcessar" id="btnAcessar"> ACESSAR</button>
+       
+     </div>
+
+      <a href="cadastro.html" class="Cadastro">
+        <span></span>
+        
+        Se cadastrar
+      </a>
+      
+    </div>
+
+
+   
+
+    
+</body>
+</html>
+<script src="..\js\indexlogin.js"></script>
+<img class="imglogin" src="../CSS/img/image.png" alt="">
