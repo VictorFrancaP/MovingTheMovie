@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Cadastro Usuario</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/cadastro.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    </head>
+    <body>  
+        <div class="filmes">
+            <div class="card">
+                <div class="card-top">
+                    <img class="imglogin" src="../CSS/img/image.png" alt="">
+                    <strong>  <h2 class="title">Cadastro de Usuário</h2> </strong>
+                </div> 
+                 
+                <div class="card-group"> 
+                    <label>ID</label>
+                    <input type="text" id="id" disabled="">
+                 </div>
+    
+                 <div class="card-group"> 
+                    <label>Nome</label>
+                    <input type="text" id="name" placeholder="Digite o nome:" >
+                 </div>
+    
+                 <div class="card-group"> 
+                    <label>Email</label>
+                    <input type="text" id="email" placeholder="" >
+                 </div>
+    
+                 <div class="card-group"> 
+                    <label>Senha</label>
+                    <input type="password" id="senha" placeholder="Digite a senha:" >
+                 </div>
+
+                 <div class="card-group box"> 
+                    <label>Profile</label>
+                    <select type="selectP" id="selectP"> </select>
+                 </div>
+                 
+                 <div class="card-group"> 
+                    <label><input type="checkbox" id="admin">Admin</label> 
+                 </div>
+            
+                 <br>
+                 <div class="card-group btn"> 
+                    <button class="btnSalvar" id="btnCriar"> <strong> SALVAR </strong> </button>
+    
+                    <button class="btnLimpar" id="btnLimpar"> <strong> LIMPAR </strong> </button>
+                 </div>
+                
+                <hr>
+                <table class="tbl" id="table_cadastro">
+                </table>
+        <script src="../js/cadastro.js"></script>
+    </body>
+</html>
